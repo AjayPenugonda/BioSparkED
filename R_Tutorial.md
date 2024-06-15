@@ -3,12 +3,14 @@
 Below, we will be exploring the provided R dataset “iris”
 
 ``` r
+install.packages("ggplot2")
 library(ggplot2)
 ```
 
     ## Warning: package 'ggplot2' was built under R version 4.3.2
 
 ``` r
+install.packages("dplyr")
 library(dplyr)
 ```
 
