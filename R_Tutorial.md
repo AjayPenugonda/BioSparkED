@@ -1,16 +1,17 @@
 ## R Tutorial
 
-Below, we will be exploring the provided R dataset “iris”
+Below, we will be exploring the provided R data set “iris”. In this
+tutorial, we will be utilizing this data set to explore some of the
+basic commands in R, that will allow you to create simple visualizations
+and manipulate data much easier.
 
 ``` r
-install.packages("ggplot2")
 library(ggplot2)
 ```
 
     ## Warning: package 'ggplot2' was built under R version 4.3.2
 
 ``` r
-install.packages("dplyr")
 library(dplyr)
 ```
 
@@ -249,7 +250,11 @@ head(setosa)
     ## 6          5.4         3.9          1.7         0.4  setosa
 
 Another easy way to manipulate data is by using the “select” function,
-which selects by column name.
+which selects by column name. In the below function, I am saving the
+“select” function to a variable, called “selectedColumns”. In this case,
+we can select the Sepal.Length and Petal.Length. Then, we can print the
+first 6 or so rows of selectedColumns (which is the filtered data) using
+the “head” function.
 
 ``` r
 selectedColumns <- select(iris, Sepal.Length, Petal.Length)
@@ -266,8 +271,15 @@ head(selectedColumns)
 
 # Data Visualization
 
-One neat way to create visualizations is by creating a histogram. Let’s
-use the “hist” function to do so.
+### Histogram
+
+One neat way to create visualizations is by creating a histogram, which
+is useful for showing what a distribution of data looks like. Let’s use
+the “hist” function to do so. Note how the Sepal.Length column is
+specified from the iris data set using the “$”. Using the hist function,
+we can see that “col” stands for the color of the histogram bars, “main”
+is the title of the chart, “xlab” is the x-axis label, and “ylab” is the
+y-axis label.
 
 ``` r
 hist(iris$Sepal.Length,
@@ -277,8 +289,16 @@ hist(iris$Sepal.Length,
      ylab = 'Frequency')
 ```
 
-![](R_Tutorial_files/figure-markdown_github/unnamed-chunk-4-1.png) Below
-are some other great ways to make visualizations using base R.
+![](R_Tutorial_files/figure-markdown_github/unnamed-chunk-4-1.png) \###
+Scatter Plot Below is a scatter plot, which is useful to view and
+understand the relationship between two variables in a set of data.
+Again, note how the “$” is used to specify the columns of the data set
+that will be used to make the scatter plot. To create a scatter plot in
+base R, we can use the “plot” function. This function requires the two
+areas of the data set that we are specifying, a title, an x-axis label,
+and a y-axis label. Optionally, you can customize the color (in this
+case it is orange) and the type of dot on the diagram by using the “pch”
+specifier.
 
 ``` r
 # Scatter Plot
@@ -290,7 +310,14 @@ plot(iris$Petal.Length, iris$Petal.Width,
      pch = 15)
 ```
 
-![](R_Tutorial_files/figure-markdown_github/unnamed-chunk-5-1.png)
+![](R_Tutorial_files/figure-markdown_github/unnamed-chunk-5-1.png) \###
+Box Plot Below is a box plot, which is useful for comparing
+distributions across categories. Here, we compare the petal width across
+different species. This is specified by the “~”. The surrounding items,
+Petal.Width and Species, specify the y and x axis respectively. These
+plots are created using the “boxplot” function, which requires you to
+specify the data set, the title, and the labels for the axes.
+Optionally, you can also customize the color of the box plot.
 
 ``` r
 # Box Plot
@@ -302,7 +329,7 @@ boxplot(Petal.Width~Species,
         col = 'orange')
 ```
 
-![](R_Tutorial_files/figure-markdown_github/unnamed-chunk-5-2.png)
+![](R_Tutorial_files/figure-markdown_github/unnamed-chunk-6-1.png)
 
 This tutorial explores the basics of R programming by exploring the iris
 dataset. Using the information provided in the tutorial, create similar
