@@ -289,8 +289,10 @@ hist(iris$Sepal.Length,
      ylab = 'Frequency')
 ```
 
-![](R_Tutorial_files/figure-markdown_github/unnamed-chunk-4-1.png) \###
-Scatter Plot Below is a scatter plot, which is useful to view and
+![](R_Tutorial_files/figure-markdown_github/unnamed-chunk-4-1.png) 
+### Scatter Plot 
+
+Below is a scatter plot, which is useful to view and
 understand the relationship between two variables in a set of data.
 Again, note how the “$” is used to specify the columns of the data set
 that will be used to make the scatter plot. To create a scatter plot in
@@ -310,8 +312,10 @@ plot(iris$Petal.Length, iris$Petal.Width,
      pch = 15)
 ```
 
-![](R_Tutorial_files/figure-markdown_github/unnamed-chunk-5-1.png) \###
-Box Plot Below is a box plot, which is useful for comparing
+![](R_Tutorial_files/figure-markdown_github/unnamed-chunk-5-1.png)
+### Box Plot 
+
+Below is a box plot, which is useful for comparing
 distributions across categories. Here, we compare the petal width across
 different species. This is specified by the “~”. The surrounding items,
 Petal.Width and Species, specify the y and x axis respectively. These
