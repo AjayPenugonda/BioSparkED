@@ -289,7 +289,7 @@ hist(iris$Sepal.Length,
      ylab = 'Frequency')
 ```
 
-![](/Users/ajaypenugonda/Documents/hist1.png) 
+![](hist1.png) 
 ### Scatter Plot 
 
 Below is a scatter plot, which is useful to view and
@@ -312,7 +312,7 @@ plot(iris$Petal.Length, iris$Petal.Width,
      pch = 15)
 ```
 
-![](/Users/ajaypenugonda/Documents/scatter1.png)
+![](scatter1.png)
 ### Box Plot 
 
 Below is a box plot, which is useful for comparing
@@ -333,7 +333,7 @@ boxplot(Petal.Width~Species,
         col = 'orange')
 ```
 
-![](/Users/ajaypenugonda/Documents/box1.png)
+![](box1.png)
 
 This tutorial explores the basics of R programming by exploring the iris
 dataset. Using the information provided in the tutorial, create similar
