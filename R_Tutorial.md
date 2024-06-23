@@ -6,15 +6,17 @@ basic commands in R, that will allow you to create simple visualizations
 and manipulate data much easier.
 
 ### Installing the Packages
-To begin, we need to install and load the `ggplot2` and `dplyr` packages. These packages provide powerful tools for data visualization and data manipulation respectively.
+To begin, we need to install and load the `ggplot2` and `dplyr` packages. These packages provide powerful tools for data visualization and data manipulation respectively. When loading these packages, you might see some messages regarding masking of functions. This is normal and indicates that functions from \texttt{dplyr} are taking precedence over those in base R.
 
 ``` r
+install.packages("ggplot2")
 library(ggplot2)
 ```
 
     ## Warning: package 'ggplot2' was built under R version 4.3.2
 
 ``` r
+install.packages("dplyr)"
 library(dplyr)
 ```
 
