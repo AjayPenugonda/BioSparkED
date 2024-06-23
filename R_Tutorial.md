@@ -5,6 +5,9 @@ tutorial, we will be utilizing this data set to explore some of the
 basic commands in R, that will allow you to create simple visualizations
 and manipulate data much easier.
 
+### Installing the Packages
+To begin, we need to install and load the `ggplot2` and `dplyr` packages. These packages provide powerful tools for data visualization and data manipulation respectively.
+
 ``` r
 library(ggplot2)
 ```
@@ -25,6 +28,9 @@ library(dplyr)
     ## The following objects are masked from 'package:base':
     ## 
     ##     intersect, setdiff, setequal, union
+
+### Loading the Dataset
+The iris dataset is included in R and can be loaded with the \texttt{data} function. This dataset contains measurements of iris flowers and is commonly used for demonstrating data analysis techniques.
 
 ``` r
 # Load in the dataset
@@ -184,6 +190,8 @@ iris
     ## 149          6.2         3.4          5.4         2.3  virginica
     ## 150          5.9         3.0          5.1         1.8  virginica
 
+
+The head function displays the first six rows of the dataset, allowing you to quickly inspect its structure.
 ``` r
 # Show the first 6 rows
 head(iris)
@@ -196,6 +204,7 @@ head(iris)
     ## 4          4.6         3.1          1.5         0.2  setosa
     ## 5          5.0         3.6          1.4         0.2  setosa
     ## 6          5.4         3.9          1.7         0.4  setosa
+
 
 ``` r
 # Generate a list of summary statistics using the function "summary"
@@ -229,7 +238,7 @@ str(iris)
     ##  $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
     ##  $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
 
-# Data Manipulation
+### Data Manipulation
 
 Now that the data has been loaded, we can begin to manipulate the data
 using the package dplyr. To do so, let’s start by filtering for a
