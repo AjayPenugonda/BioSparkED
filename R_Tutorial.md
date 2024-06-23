@@ -232,7 +232,7 @@ str(iris)
 # Data Manipulation
 
 Now that the data has been loaded, we can begin to manipulate the data
-using the package dplyr To do so, let’s start by filtering for a
+using the package dplyr. To do so, let’s start by filtering for a
 specific species. In this case, we can pick “setosa”.
 
 ``` r
@@ -249,12 +249,7 @@ head(setosa)
     ## 5          5.0         3.6          1.4         0.2  setosa
     ## 6          5.4         3.9          1.7         0.4  setosa
 
-Another easy way to manipulate data is by using the “select” function,
-which selects by column name. In the below function, I am saving the
-“select” function to a variable, called “selectedColumns”. In this case,
-we can select the Sepal.Length and Petal.Length. Then, we can print the
-first 6 or so rows of selectedColumns (which is the filtered data) using
-the “head” function.
+To extract data from certain columns of the database, use the “select” function. In the below example, information contained in the columns Sepal.Length and Petal.Length is extracted using the "select" function, and information from the first 6 rows of selected columns is printed using the “head” function
 
 ``` r
 selectedColumns <- select(iris, Sepal.Length, Petal.Length)
