@@ -277,7 +277,7 @@ head(selectedColumns)
 
 # Data Visualization
 
-R provides various functions to visualize data. We start with a histogram to show the distribution of sepal lengths in the iris dataset. In large amounts of biological data, histograms can be used to demonstrate basic relationships and distributions of data.
+R provides various functions to visualize data. We start with a histogram to show the distribution of sepal lengths in the iris dataset.
 
 ### Histogram
 
