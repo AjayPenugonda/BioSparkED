@@ -301,10 +301,10 @@ hist(iris$Sepal.Length,
 
 Below is a scatter plot, which is useful to view and
 understand the relationship between two variables in a set of data. To create a scatter plot in
-base R, we can use the “plot” function. Again, note how the “$” is used to specify the columns of the data set
-that will be used to make the scatter plot. This function requires the two
+base R, we can use the “plot” function. This function requires the two
 areas of the data set that we are specifying, a title, an x-axis label,
-and a y-axis label. Optionally, you can customize the color (in this
+and a y-axis label. Again, note how the “$” is used to specify the columns of the data set
+that will be used to make the scatter plot. Optionally, you can customize the color (in this
 case it is orange) and the type of dot on the diagram by using the “pch”
 specifier.
 
@@ -336,7 +336,12 @@ boxplot(Petal.Width~Species,
 
 ![](box1.png)
 
-This tutorial explores the basics of R programming by exploring the iris
+# Conclusion
+This tutorial explores basic R functions by exploring the iris
 dataset. Using the information provided in the tutorial, create similar
 visualizations for another R provided dataset (to check the full list
-simply run the command printed below) data()
+simply run the command printed below). 
+
+``` r
+data()
+```
