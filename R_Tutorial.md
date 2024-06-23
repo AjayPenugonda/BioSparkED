@@ -32,7 +32,7 @@ library(dplyr)
     ##     intersect, setdiff, setequal, union
 
 ### Loading the Dataset
-The iris dataset is included in R and can be loaded with the \texttt{data} function. This dataset contains measurements of iris flowers and is commonly used for demonstrating data analysis techniques.
+The iris dataset is included in R and can be loaded with the data function. This dataset contains measurements of iris flowers and is commonly used for demonstrating data analysis techniques.
 
 ``` r
 # Load in the dataset
