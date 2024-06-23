@@ -284,8 +284,7 @@ R provides various functions to visualize data. We start with a histogram to sho
 One neat way to create visualizations is by creating a histogram, which
 is useful for showing what a distribution of data looks like. Let’s use
 the “hist” function to do so. Note how the Sepal.Length column is
-specified from the iris data set using the “$”. Using the hist function,
-we can see that “col” stands for the color of the histogram bars, “main”
+specified from the iris data set using the “$”. In the below function, “col” stands for the color of the histogram bars, “main”
 is the title of the chart, “xlab” is the x-axis label, and “ylab” is the
 y-axis label.
 
@@ -301,10 +300,9 @@ hist(iris$Sepal.Length,
 ### Scatter Plot 
 
 Below is a scatter plot, which is useful to view and
-understand the relationship between two variables in a set of data.
-Again, note how the “$” is used to specify the columns of the data set
-that will be used to make the scatter plot. To create a scatter plot in
-base R, we can use the “plot” function. This function requires the two
+understand the relationship between two variables in a set of data. To create a scatter plot in
+base R, we can use the “plot” function. Again, note how the “$” is used to specify the columns of the data set
+that will be used to make the scatter plot. This function requires the two
 areas of the data set that we are specifying, a title, an x-axis label,
 and a y-axis label. Optionally, you can customize the color (in this
 case it is orange) and the type of dot on the diagram by using the “pch”
@@ -323,13 +321,8 @@ plot(iris$Petal.Length, iris$Petal.Width,
 ![](scatter1.png)
 ### Box Plot 
 
-Below is a box plot, which is useful for comparing
-distributions across categories. Here, we compare the petal width across
-different species. This is specified by the “~”. The surrounding items,
-Petal.Width and Species, specify the y and x axis respectively. These
-plots are created using the “boxplot” function, which requires you to
-specify the data set, the title, and the labels for the axes.
-Optionally, you can also customize the color of the box plot.
+Below is a box plot, which is useful for comparing distributions across categories. These plots are created using the “boxplot” function, which requires you to specify the data set, the title, and the labels for the axes. Here, we compare the petal width across
+different species. This is specified by the “~”. The surrounding items, Petal.Width and Species, specify the y and x axis respectively. Optionally, you can also customize the color of the box plot.
 
 ``` r
 # Box Plot
