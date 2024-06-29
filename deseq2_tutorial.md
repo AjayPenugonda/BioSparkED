@@ -419,10 +419,3 @@ robust methods to identify differentially expressed genes.
 For more detailed information and advanced usage, refer to the [DESeq2
 vignette](https://www.bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html).
 
-\`\`\`
-
-This R Markdown file provides a comprehensive lesson on using the DESeq2
-package for differential gene expression analysis. The lesson includes
-installation steps, data preparation, running the DESeq2 pipeline, and
-visualizing the results. You can customize it further based on your
-specific teaching needs.
