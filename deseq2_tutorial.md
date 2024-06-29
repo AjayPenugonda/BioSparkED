@@ -343,7 +343,7 @@ over the mean of normalized counts.
 plotMA(res, ylim = c(-5, 5))
 ```
 
-![](deseq2_tutorial_files/figure-markdown_github/ma-plot-1.png)
+![](maplot.png)
 
 ### Histogram of p-values
 
@@ -355,7 +355,7 @@ are.
 hist(res$pvalue, breaks = 50, col = "grey")
 ```
 
-![](deseq2_tutorial_files/figure-markdown_github/pvalue-hist-1.png)
+![](hist_deseq2.png)
 
 ### Gene Ontology Enrichment
 
@@ -376,7 +376,7 @@ gene_list <- rownames(res)[which(res$padj < 0.05)]
 ego <- enrichGO(gene = gene_list, OrgDb = org.Hs.eg.db, keyType = "ENSEMBL", ont = "BP")
 dotplot(ego)
 ```
-
+![](GOanalysis_deseq2.png)
 ## Visualization
 
 ### Heatmap of Sample Distances
@@ -393,7 +393,7 @@ colnames(sampleDistMatrix) <- NULL
 pheatmap(sampleDistMatrix, clustering_distance_rows = sampleDists, clustering_distance_cols = sampleDists)
 ```
 
-![](deseq2_tutorial_files/figure-markdown_github/heatmap-1.png)
+![](distanceheatmap_deseq2.png)
 
 ### PCA Plot
 
@@ -406,7 +406,7 @@ plotPCA(vsd, intgroup = c("cell", "dex"))
 
     ## using ntop=500 top features by variance
 
-![](deseq2_tutorial_files/figure-markdown_github/pca-plot-1.png)
+![](PCA_deseq2.png)
 
 ## Conclusion
 
